@@ -49,13 +49,11 @@ void Product::Input()
     cin.ignore();
 }
 
-// Геттеры
 string Product::GetName() { return name; }
 string Product::GetCategory() { return category; }
 double Product::GetPrice() { return price; }
 double Product::GetWeight() { return weight; }
 
-// Сеттеры
 void Product::SetName(string n) { name = n; }
 void Product::SetCategory(string cat) { category = cat; }
 void Product::SetPrice(double pr) { price = pr; }
