@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include "Product.h"
 using namespace std;
 
@@ -21,4 +21,6 @@ int main()
     cout << "Category: " << b.GetCategory() << endl;
     cout << "Price: " << b.GetPrice() << endl;
     cout << "Weight: " << b.GetWeight() << endl;
+
+    Product::ShowCount();
 }

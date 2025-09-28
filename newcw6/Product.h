@@ -9,6 +9,8 @@ class Product
     double price;
     double weight;
 
+    static int count;
+
 public:
     Product();
     Product(string n, string cat, double pr, double we);
@@ -27,5 +29,6 @@ public:
     void SetPrice(double pr);
     void SetWeight(double we);
 
+    static void ShowCount();
 };
 

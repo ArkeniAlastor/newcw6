@@ -2,12 +2,15 @@
 #include <iostream>
 using namespace std;
 
+int Product::count = 0;
+
 Product::Product()
 {
     name = "";
     category = "";
     price = 0;
     weight = 0;
+    count++;
 }
 
 Product::Product(string n, string cat, double pr, double we)
@@ -16,6 +19,7 @@ Product::Product(string n, string cat, double pr, double we)
     category = cat;
     price = pr;
     weight = we;
+    count++;
 }
 
 void Product::Print()
@@ -58,3 +62,8 @@ void Product::SetName(string n) { name = n; }
 void Product::SetCategory(string cat) { category = cat; }
 void Product::SetPrice(double pr) { price = pr; }
 void Product::SetWeight(double we) { weight = we; }
+
+void Product::ShowCount()
+{
+    cout << "Количество созданных объектов: " << count << endl;
+}
